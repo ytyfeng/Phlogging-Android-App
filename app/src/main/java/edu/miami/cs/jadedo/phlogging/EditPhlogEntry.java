@@ -420,9 +420,7 @@ public class EditPhlogEntry extends AppCompatActivity implements SensorEventList
         sensorValues += "Orientation\n";
         if (orientationAvailable) {
             sensorValues +=
-                    "A " + String.format(format, orientation[0]) + ", " +
-                            "P " + String.format(format, orientation[1]) + ", " +
-                            "R " + String.format(format, orientation[2]) + "\n\n";
+                    "A " + String.format(format, orientation[0]) + "° " + "\n\n"; // since we only want compass bearing data 
         } else {
             sensorValues += "Not available\n\n";
         }
